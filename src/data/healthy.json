@@ -1,0 +1,67 @@
+{
+  "status": "success",
+  "message": "Healthy data fetched successfully",
+  "meta": {
+    "total_pages": 1,
+    "total_items": 8,
+    "page": 1
+  },
+  "data": [
+    {
+      "id": 1,
+      "created_at": "2025-05-21T00:00:00.000Z",
+      "updated_at": "2025-05-21T00:00:00.000Z",
+      "type": "Morning",
+      "image": "/assets/images/top/healthy_01.jpg"
+    },
+    {
+      "id": 2,
+      "created_at": "2025-05-21T00:00:00.000Z",
+      "updated_at": "2025-05-21T00:00:00.000Z",
+      "type": "Morning",
+      "image": "/assets/images/top/healthy_02.jpg"
+    },
+    {
+      "id": 3,
+      "created_at": "2025-05-21T00:00:00.000Z",
+      "updated_at": "2025-05-21T00:00:00.000Z",
+      "type": "Morning",
+      "image": "/assets/images/top/healthy_03.jpg"
+    },
+    {
+      "id": 4,
+      "created_at": "2025-05-21T00:00:00.000Z",
+      "updated_at": "2025-05-21T00:00:00.000Z",
+      "type": "Morning",
+      "image": "/assets/images/top/healthy_04.jpg"
+    },
+    {
+      "id": 5,
+      "created_at": "2025-05-20T00:00:00.000Z",
+      "updated_at": "2025-05-20T00:00:00.000Z",
+      "type": "Morning",
+      "image": "/assets/images/top/healthy_05.jpg"
+    },
+    {
+      "id": 6,
+      "created_at": "2025-05-20T00:00:00.000Z",
+      "updated_at": "2025-05-20T00:00:00.000Z",
+      "type": "Morning",
+      "image": "/assets/images/top/healthy_06.jpg"
+    },
+    {
+      "id": 7,
+      "created_at": "2025-05-20T00:00:00.000Z",
+      "updated_at": "2025-05-20T00:00:00.000Z",
+      "type": "Morning",
+      "image": "/assets/images/top/healthy_07.jpg"
+    },
+    {
+      "id": 8,
+      "created_at": "2025-05-20T00:00:00.000Z",
+      "updated_at": "2025-05-20T00:00:00.000Z",
+      "type": "Morning",
+      "image": "/assets/images/top/healthy_08.jpg"
+    }
+  ]
+}

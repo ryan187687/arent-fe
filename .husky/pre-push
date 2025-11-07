@@ -1,0 +1,8 @@
+#!/bin/sh
+
+set -e
+
+echo "🏗️  Running build..."
+pnpm build
+
+echo "✅ All checks passed. Proceeding to push."

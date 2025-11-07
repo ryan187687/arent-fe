@@ -1,0 +1,75 @@
+{
+  "status": "success",
+  "message": "Column data fetched successfully",
+  "meta": {
+    "total_pages": 1,
+    "total_items": 8,
+    "page": 1
+  },
+  "data": [
+    {
+      "id": 1,
+      "created_at": "2021-05-17T23:25:00.000Z",
+      "updated_at": "2021-05-17T23:25:00.000Z",
+      "image": "/assets/images/column/column_01.jpg",
+      "description": "魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ…",
+      "tags": ["魚料理", "和食", "DHA"]
+    },
+    {
+      "id": 2,
+      "created_at": "2021-05-17T23:25:00.000Z",
+      "updated_at": "2021-05-17T23:25:00.000Z",
+      "image": "/assets/images/column/column_02.jpg",
+      "description": "魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ…",
+      "tags": ["魚料理", "和食", "DHA"]
+    },
+    {
+      "id": 3,
+      "created_at": "2021-05-17T23:25:00.000Z",
+      "updated_at": "2021-05-17T23:25:00.000Z",
+      "image": "/assets/images/column/column_03.jpg",
+      "description": "魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ…",
+      "tags": ["魚料理", "和食", "DHA"]
+    },
+    {
+      "id": 4,
+      "created_at": "2021-05-17T23:25:00.000Z",
+      "updated_at": "2021-05-17T23:25:00.000Z",
+      "image": "/assets/images/column/column_04.jpg",
+      "description": "魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ…",
+      "tags": ["魚料理", "和食", "DHA"]
+    },
+    {
+      "id": 5,
+      "created_at": "2021-05-17T23:25:00.000Z",
+      "updated_at": "2021-05-17T23:25:00.000Z",
+      "image": "/assets/images/column/column_05.jpg",
+      "description": "魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ…",
+      "tags": ["魚料理", "和食", "DHA"]
+    },
+    {
+      "id": 6,
+      "created_at": "2021-05-17T23:25:00.000Z",
+      "updated_at": "2021-05-17T23:25:00.000Z",
+      "image": "/assets/images/column/column_06.jpg",
+      "description": "魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ…",
+      "tags": ["魚料理", "和食", "DHA"]
+    },
+    {
+      "id": 7,
+      "created_at": "2021-05-17T23:25:00.000Z",
+      "updated_at": "2021-05-17T23:25:00.000Z",
+      "image": "/assets/images/column/column_07.jpg",
+      "description": "魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ…",
+      "tags": ["魚料理", "和食", "DHA"]
+    },
+    {
+      "id": 8,
+      "created_at": "2021-05-17T23:25:00.000Z",
+      "updated_at": "2021-05-17T23:25:00.000Z",
+      "image": "/assets/images/column/column_08.jpg",
+      "description": "魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ…",
+      "tags": ["魚料理", "和食", "DHA"]
+    }
+  ]
+}

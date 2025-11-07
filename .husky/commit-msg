@@ -1,0 +1,4 @@
+#!/bin/sh
+
+echo "🔍 Running commitlint..."
+npx --no -- commitlint --edit $1
