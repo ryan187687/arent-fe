@@ -6,8 +6,12 @@ const BaseChart = dynamic(() => import('./BaseChart'), {
   ssr: false,
 });
 
-const ChartWrapper: React.FC = () => {
-  return <BaseChart />;
+interface ChartWrapperProps {
+  className?: string;
+}
+
+const ChartWrapper: React.FC<ChartWrapperProps> = ({ className }) => {
+  return <BaseChart className={className} />;
 };
 
 export default ChartWrapper;

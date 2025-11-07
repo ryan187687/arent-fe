@@ -30,7 +30,7 @@ const ToTop: React.FC = () => {
 
   return (
     <button
-      className="h-[48px] w-[48px] fixed bottom-[20dvh] right-[90px]"
+      className="h-[48px] w-[48px] fixed bottom-[20dvh] right-[90px] rounded-full bg-white"
       onClick={handleScrollToTop}
     >
       <TopIcon />

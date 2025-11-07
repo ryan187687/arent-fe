@@ -13,12 +13,12 @@ const MENU_ITEMS: MenuItemProps[] = [
   {
     icon: <ChallengeIcon />,
     label: APP_MENU_LABELS.CHALLENGE,
-    href: APP_PAGES.TOP,
+    href: APP_PAGES.CHALLENGE,
   },
   {
     icon: <InfoIcon />,
     label: APP_MENU_LABELS.ANNOUNCEMENT,
-    href: APP_PAGES.TOP,
+    href: APP_PAGES.ANNOUNCEMENT,
   },
 ];
 

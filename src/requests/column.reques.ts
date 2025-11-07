@@ -1,5 +1,5 @@
 import { APP_API_URL } from '@/config';
-import { ColumnDTO } from '@/models/dto/column.dto';
+import { ColumnDTO } from '@/models/dto';
 import type { ApiResponse } from '@/services/axios';
 import { get } from '@/services/axios';
 

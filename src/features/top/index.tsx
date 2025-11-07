@@ -1,27 +1,13 @@
 import { PrimaryButton } from '@/components/atoms/Buttons';
-import { ChartWrapper } from '@/components/atoms/Chart';
 import { Container } from '@/components/atoms/Container';
-import { Image } from '@/components/atoms/Image';
-import { HealthyFilters } from '@/components/organisms/HealthyFilters';
-import { HealthyList } from '@/components/organisms/HealthyList';
+import { HealthyChart } from './components/HealthyChart';
+import { HealthyFilters } from './components/HealthyFilters';
+import { HealthyList } from './components/HealthyList';
 
 const TopSection: React.FC = () => {
   return (
     <>
-      <div className="flex">
-        <div className="w-[40%] h-[316px]">
-          <Image
-            src="/assets/images/top/main_photo.png"
-            alt="main photo"
-            width={540}
-            height={316}
-            className="w-full h-full object-cover"
-          />
-        </div>
-        <div className="w-[60%]">
-          <ChartWrapper />
-        </div>
-      </div>
+      <HealthyChart />
       <Container>
         <HealthyFilters />
         <HealthyList />

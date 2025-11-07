@@ -1,5 +1,6 @@
 'use client';
 
+import { cn } from '@/utils/cn';
 import {
   CategoryScale,
   Chart as ChartJS,
@@ -13,7 +14,11 @@ import { Line } from 'react-chartjs-2';
 
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Tooltip, Filler);
 
-const BaseChart: React.FC = () => {
+interface BaseChartProps {
+  className?: string;
+}
+
+const BaseChart: React.FC<BaseChartProps> = ({ className }) => {
   const data = {
     labels: ['6月', '7月', '8月', '9月', '10月', '11月', '12月', '1月', '2月', '3月', '4月', '5月'],
     datasets: [
@@ -59,7 +64,7 @@ const BaseChart: React.FC = () => {
   };
 
   return (
-    <div className="size-full bg-[#2E2E2E] p-4">
+    <div className={cn('size-full bg-[#2E2E2E] p-4', className)}>
       <Line data={data} options={options} />
     </div>
   );
