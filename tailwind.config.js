@@ -11,8 +11,11 @@ module.exports = {
       maxWidth: {
         container: '960px',
       },
+      fontFamily: {
+        'noto-sans-jp': ['Noto Sans JP', 'sans-serif'],
+        inter: ['Inter', 'sans-serif'],
+      },
     },
-    screens: {},
   },
   plugins: [],
 };

@@ -3,7 +3,8 @@ import {
   APP_RECORD_CATEGORY_DESCRIPTION,
   APP_RECORD_CATEGORY_TYPE,
 } from '@/config/constants';
-import { IRecordCategory } from '@/types/IRecord';
+import type { IRecordCategory } from '@/types/IRecord';
+
 import RecordCategoryItem from './RecordCategoryItem';
 
 const RECORD_CATEGORY_ITEMS: IRecordCategory[] = [
@@ -26,7 +27,7 @@ const RECORD_CATEGORY_ITEMS: IRecordCategory[] = [
 
 const RecordCategoryList: React.FC = async () => {
   return (
-    <ul className="grid grid-cols-3 gap-12">
+    <ul className="grid grid-cols-3 gap-2 lg:gap-12">
       {RECORD_CATEGORY_ITEMS.map((item) => (
         <li key={item.type}>
           <RecordCategoryItem {...item} />

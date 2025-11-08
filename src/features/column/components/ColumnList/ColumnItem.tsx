@@ -1,6 +1,6 @@
 import { Image } from '@/components/atoms/Image';
 import Label from '@/components/atoms/Label/Label';
-import { ColumnEntity } from '@/models/entities';
+import type { ColumnEntity } from '@/models/entities';
 
 const ColumnItem: React.FC<ColumnEntity> = ({ image, date_time, description, tags }) => {
   return (
@@ -15,7 +15,7 @@ const ColumnItem: React.FC<ColumnEntity> = ({ image, date_time, description, tag
         />
         <Label label={`${date_time}`} size="sm" />
       </div>
-      <h4 className="text-[15px]">{description}</h4>
+      <h4 className="text-[15px] font-inter">{description}</h4>
       <h5 className="text-[12px] text-[#FF963C]">{tags}</h5>
     </div>
   );

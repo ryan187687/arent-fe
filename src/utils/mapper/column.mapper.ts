@@ -1,6 +1,7 @@
-import { ColumnDTO } from '@/models/dto';
-import { ColumnEntity } from '@/models/entities';
 import dayjs from 'dayjs';
+
+import type { ColumnDTO } from '@/models/dto';
+import type { ColumnEntity } from '@/models/entities';
 
 export const mapColumnDtoToEntity = (dto: ColumnDTO): ColumnEntity => ({
   id: dto.id,

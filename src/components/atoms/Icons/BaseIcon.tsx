@@ -1,5 +1,6 @@
-import { cn } from '@/utils/cn';
 import React from 'react';
+
+import { cn } from '@/utils/cn';
 
 interface BaseIconProps extends React.SVGProps<SVGSVGElement> {
   component: React.FC<React.SVGProps<SVGSVGElement>>;
@@ -8,7 +9,7 @@ interface BaseIconProps extends React.SVGProps<SVGSVGElement> {
 
 const BaseIcon: React.FC<BaseIconProps> = ({ component: Component, className = '', ...rest }) => {
   return (
-    <span className={cn('inline-flex items-center justify-center', className)}>
+    <span className={cn('inline-flex items-center justify-center w-full h-full', className)}>
       <Component {...rest} />
     </span>
   );

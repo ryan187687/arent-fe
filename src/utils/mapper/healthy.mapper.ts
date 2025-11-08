@@ -1,4 +1,4 @@
-import { HealthyDTO, HealthyEntity } from '@/models';
+import type { HealthyDTO, HealthyEntity } from '@/models';
 
 export const mapHealthyDtoToEntity = (dto: HealthyDTO): HealthyEntity => ({
   id: dto.id,

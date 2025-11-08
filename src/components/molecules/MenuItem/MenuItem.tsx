@@ -1,12 +1,13 @@
 'use client';
-import { IMenu } from '@/types';
-import { cn } from '@/utils/cn';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
-export interface MenuItemProps extends IMenu {}
+import { Badge } from '@/components/atoms/Badge';
+import { APP_MENU_LABELS } from '@/config';
+import type { IMenu } from '@/types';
+import { cn } from '@/utils/cn';
 
-const MenuItem: React.FC<MenuItemProps> = ({ icon, label, href }) => {
+const MenuItem: React.FC<IMenu> = ({ icon, label, href }) => {
   const pathname = usePathname();
   const isActive = pathname === href;
   return (
@@ -18,7 +19,12 @@ const MenuItem: React.FC<MenuItemProps> = ({ icon, label, href }) => {
         isActive && 'text-orange-default',
       )}
     >
-      {icon}
+      <span className="size-[32px] relative">
+        {icon}
+        {label === APP_MENU_LABELS.ANNOUNCEMENT && (
+          <Badge label="1" className="absolute -top-1 -right-1" />
+        )}
+      </span>
       {label}
     </Link>
   );

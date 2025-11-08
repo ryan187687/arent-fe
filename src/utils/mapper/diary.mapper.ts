@@ -1,6 +1,7 @@
-import { DiaryDTO } from '@/models/dto';
-import { DiaryEntity } from '@/models/entities';
 import dayjs from 'dayjs';
+
+import type { DiaryDTO } from '@/models/dto';
+import type { DiaryEntity } from '@/models/entities';
 
 export const mapDiaryDtoToEntity = (dto: DiaryDTO): DiaryEntity => ({
   id: dto.id,

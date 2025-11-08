@@ -1,5 +1,7 @@
 import { CupIcon, KnifeIcon } from '@/components/atoms/Icons';
-import { EnumHealthyTypes, IHealthyFilter } from '@/types';
+import type { IHealthyFilter } from '@/types';
+import { EnumHealthyTypes } from '@/types';
+
 import HealthyFilterItem from './HealthyFilterItem';
 
 const HEALTHY_FILTERS: IHealthyFilter[] = [
@@ -27,9 +29,9 @@ const HEALTHY_FILTERS: IHealthyFilter[] = [
 
 const HealthyFilters: React.FC = () => {
   return (
-    <ul className="flex gap-[4rem] justify-center py-6">
+    <ul className="flex justify-between py-6 max-w-[736px] mx-auto">
       {HEALTHY_FILTERS.map((filter) => (
-        <li key={filter.id}>
+        <li key={filter.id} className="flex w-[80px] md:w-[100px] lg:w-[136px]">
           <HealthyFilterItem {...filter} />
         </li>
       ))}

@@ -1,5 +1,6 @@
 import type { NextRequest } from 'next/server';
 import { NextResponse } from 'next/server';
+
 import { APP_PAGES } from './config';
 
 export function middleware(req: NextRequest) {

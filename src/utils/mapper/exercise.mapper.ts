@@ -1,5 +1,5 @@
-import { ExerciseDTO } from '@/models/dto';
-import { ExerciseEntity } from '@/models/entities';
+import type { ExerciseDTO } from '@/models/dto';
+import type { ExerciseEntity } from '@/models/entities';
 
 export const mapExerciseDtoToEntity = (dto: ExerciseDTO): ExerciseEntity => ({
   id: dto.id,

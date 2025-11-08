@@ -1,5 +1,6 @@
 import { PrimaryButton } from '@/components/atoms/Buttons';
 import { Container } from '@/components/atoms/Container';
+
 import { ColumnList } from './components/ColumnList';
 import { RecommendedList } from './components/RecommendedList';
 

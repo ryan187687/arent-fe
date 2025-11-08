@@ -10,7 +10,7 @@ const Label: React.FC<LabelProps> = ({ label, size = 'lg' }) => {
   return (
     <h4
       className={cn(
-        'text-white text-[15px] flex items-center bg-yellow-default px-2 absolute bottom-0 left-0',
+        'text-white text-[15px] flex items-center bg-yellow-default px-2 absolute bottom-0 left-0 font-inter',
         sizeClass,
       )}
     >

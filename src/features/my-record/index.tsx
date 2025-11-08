@@ -1,5 +1,6 @@
 import { PrimaryButton } from '@/components/atoms/Buttons';
 import { Container } from '@/components/atoms/Container';
+
 import { BodyRecord } from './components/BodyRecord';
 import { DiaryList } from './components/DiaryList';
 import { MyExercise } from './components/MyExercise';
@@ -7,7 +8,7 @@ import { RecordCategoryList } from './components/RecordCategoryList';
 const MyRecordSection: React.FC = () => {
   return (
     <Container>
-      <div className="flex flex-col gap-14 pt-14">
+      <div className="flex flex-col gap-8 lg:gap-14 pt-8 lg:pt-14">
         <RecordCategoryList />
         <BodyRecord />
         <MyExercise />

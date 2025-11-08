@@ -1,8 +1,9 @@
-import { HealthyDTO, HealthyEntity } from '@/models';
+import type { HealthyDTO, HealthyEntity } from '@/models';
 import { getHealthyRequest } from '@/requests';
 import { requestServer } from '@/services/requestServer';
 import { isEmptyLodash } from '@/utils';
 import { mapHealthyDtoToEntity } from '@/utils/mapper';
+
 import HealthyItem from './HealthyItem';
 
 const HealthyList: React.FC = async () => {
@@ -17,7 +18,7 @@ const HealthyList: React.FC = async () => {
   }
   const healthyEntities: HealthyEntity[] = healthyData.map(mapHealthyDtoToEntity);
   return (
-    <ul className="grid grid-cols-4 gap-2">
+    <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
       {healthyEntities.map((healthyEntityData) => (
         <li key={healthyEntityData.id}>
           <HealthyItem {...healthyEntityData} />

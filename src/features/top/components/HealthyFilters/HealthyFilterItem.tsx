@@ -1,13 +1,15 @@
 import { HexIcon } from '@/components/atoms/Icons';
-import { IHealthyFilter } from '@/types';
+import type { IHealthyFilter } from '@/types';
 
 const HealthyFilterItem: React.FC<IHealthyFilter> = ({ name, icon }) => {
   return (
-    <div className="flex relative aspect-square w-[136px] cursor-pointer hover:opacity-80 transition-opacity">
-      <HexIcon />
+    <div className="flex relative aspect-square cursor-pointer hover:opacity-80 transition-opacity w-full">
+      <div className="w-full">
+        <HexIcon />
+      </div>
       <div className="absolute top-0 left-0 flex items-center flex-col justify-center h-full w-full">
-        {icon}
-        <h2 className="text-white text-[20px]">{name}</h2>
+        <div className="size-[26px] lg:size-auto">{icon}</div>
+        <h2 className="text-white text-[14px] lg:text-[20px] font-inter">{name}</h2>
       </div>
     </div>
   );

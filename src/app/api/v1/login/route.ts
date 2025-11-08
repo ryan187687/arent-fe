@@ -1,5 +1,6 @@
-import { APP_PAGES, APP_USER_DUMMY } from '@/config';
 import { NextResponse } from 'next/server';
+
+import { APP_PAGES, APP_USER_DUMMY } from '@/config';
 
 export async function POST(req: Request) {
   const { username, password } = await req.json();

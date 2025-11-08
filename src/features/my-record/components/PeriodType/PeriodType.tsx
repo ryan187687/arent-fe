@@ -1,7 +1,8 @@
 'use client';
+import { useState } from 'react';
+
 import { APP_CONSTANTS } from '@/config/constants';
 import { cn } from '@/utils';
-import { useState } from 'react';
 
 const PERIOD_TYPE_ITEMS = [
   {
@@ -26,7 +27,7 @@ const PeriodType: React.FC = () => {
     APP_CONSTANTS.PERIOD_TYPE.YEAR,
   );
   return (
-    <ul className="flex gap-4 mt-2">
+    <ul className="flex gap-4 lg:mt-2">
       {PERIOD_TYPE_ITEMS.map((item) => (
         <li key={item.id}>
           <button

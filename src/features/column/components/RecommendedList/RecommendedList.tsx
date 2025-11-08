@@ -1,5 +1,6 @@
 import { APP_RECOMMENDED_DESCRIPTION, APP_RECOMMENDED_TYPE } from '@/config/constants';
-import { IRecommended } from '@/types/IColumn';
+import type { IRecommended } from '@/types/IColumn';
+
 import RecommendedItem from './RecommendedItem';
 
 const RECOMMENDED_ITEMS: IRecommended[] = [
@@ -23,7 +24,7 @@ const RECOMMENDED_ITEMS: IRecommended[] = [
 
 const RecommendedList: React.FC = async () => {
   return (
-    <ul className="grid grid-cols-4 gap-8 py-14">
+    <ul className="grid grid-cols-2 md:grid-cols-4 gap-1 md:gap-8 py-8 lg:py-14">
       {RECOMMENDED_ITEMS.map((item) => (
         <li key={item.type}>
           <RecommendedItem {...item} />

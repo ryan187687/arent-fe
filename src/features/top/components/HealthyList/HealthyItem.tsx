@@ -1,6 +1,6 @@
 import { Image } from '@/components/atoms/Image';
 import Label from '@/components/atoms/Label/Label';
-import { HealthyEntity } from '@/models';
+import type { HealthyEntity } from '@/models';
 
 const HealthyItem: React.FC<HealthyEntity> = ({ image, type, date }) => {
   return (

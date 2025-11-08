@@ -1,10 +1,9 @@
 import { ChallengeIcon, InfoIcon, MemoIcon } from '@/components/atoms/Icons';
 import { MenuItem } from '@/components/molecules/MenuItem';
-import { MenuItemProps } from '@/components/molecules/MenuItem/MenuItem';
 import { APP_MENU_LABELS, APP_PAGES } from '@/config/constants';
-import { IMenu } from '@/types';
+import type { IMenu } from '@/types';
 
-const MENU_ITEMS: MenuItemProps[] = [
+const MENU_ITEMS: IMenu[] = [
   {
     icon: <MemoIcon />,
     label: APP_MENU_LABELS.MY_RECORD,
@@ -24,7 +23,7 @@ const MENU_ITEMS: MenuItemProps[] = [
 
 const MenuList: React.FC = () => {
   return (
-    <ul className="flex items-center justify-center">
+    <ul className="hidden lg:flex items-center justify-center">
       {MENU_ITEMS.map((menu: IMenu) => (
         <li key={menu.label}>
           <MenuItem {...menu} />

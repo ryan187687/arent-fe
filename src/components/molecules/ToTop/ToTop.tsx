@@ -1,9 +1,10 @@
 'use client';
 
-import { TopIcon } from '@/components/atoms/Icons';
-import { APP_CONSTANTS } from '@/config/constants';
 import { throttle } from 'lodash';
 import { useCallback, useEffect, useState } from 'react';
+
+import { TopIcon } from '@/components/atoms/Icons';
+import { APP_CONSTANTS } from '@/config/constants';
 
 const ToTop: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -30,7 +31,7 @@ const ToTop: React.FC = () => {
 
   return (
     <button
-      className="h-[48px] w-[48px] fixed bottom-[20dvh] right-[90px] rounded-full bg-white"
+      className="h-[32px] w-[32px] lg:h-[48px] lg:w-[48px] fixed bottom-[16px] lg:bottom-[56px] right-[16px] lg:right-[56px] rounded-full bg-white"
       onClick={handleScrollToTop}
     >
       <TopIcon />
