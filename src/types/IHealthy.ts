@@ -7,6 +7,6 @@ export enum EnumHealthyTypes {
 
 export interface IHealthyFilter {
   id: number;
-  name: string;
+  name: EnumHealthyTypes;
   icon: React.ReactNode;
 }

@@ -42,8 +42,8 @@ const CircularProgress: React.FC<CircularProgressProps> = ({ percent, date }) =>
         />
       </svg>
 
-      <div className="absolute text-white font-inter flex items-center justify-center">
-        <span className="text-[18px]">{date}</span>
+      <div className="absolute text-white font-inter flex items-center justify-center gap-1">
+        <span className="text-[18px] relative top-[2px]">{date}</span>
         <span className="text-[25px]">{percent}%</span>
       </div>
     </div>

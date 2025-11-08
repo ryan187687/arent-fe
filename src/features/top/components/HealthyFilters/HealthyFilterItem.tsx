@@ -1,9 +1,18 @@
+'use client';
 import { HexIcon } from '@/components/atoms/Icons';
-import type { IHealthyFilter } from '@/types';
+import { APP_PAGES } from '@/config';
+import type { EnumHealthyTypes, IHealthyFilter } from '@/types';
+import { nextRedirect } from '@/utils';
 
 const HealthyFilterItem: React.FC<IHealthyFilter> = ({ name, icon }) => {
+  const handleFilter = (name: EnumHealthyTypes) => {
+    nextRedirect(`${APP_PAGES.TOP}?type=${name}`);
+  };
   return (
-    <div className="flex relative aspect-square cursor-pointer hover:opacity-80 transition-opacity w-full">
+    <div
+      className="flex relative aspect-square cursor-pointer hover:opacity-80 transition-opacity w-full"
+      onClick={() => handleFilter(name)}
+    >
       <div className="w-full">
         <HexIcon />
       </div>

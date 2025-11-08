@@ -4,4 +4,5 @@ export * from './IHealthy';
 export * from './IMenu';
 export * from './IModal';
 export * from './IRecord';
+export * from './IRequest';
 export * from './IResponse';

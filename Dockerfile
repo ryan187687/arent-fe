@@ -14,18 +14,12 @@ RUN echo "🔄 Setting environment variables from .env.production..." && \
     echo "✅ Environment variables set" && \
     echo "NEXT_PUBLIC_API_URL: $NEXT_PUBLIC_API_URL" && \
     echo "NEXT_PUBLIC_API_VERSION: $NEXT_PUBLIC_API_VERSION" && \
-    echo "NEXT_PUBLIC_API_KEY: $NEXT_PUBLIC_API_KEY" && \
-    echo "NEXT_PUBLIC_INTERNAL_LOGOUT_URL: $NEXT_PUBLIC_INTERNAL_LOGOUT_URL" && \
-    echo "ENVIRONMENT: $ENVIRONMENT"
+    echo "NEXT_PUBLIC_ENV: $NEXT_PUBLIC_ENV"
 
 COPY package.json pnpm-lock.yaml* ./
 RUN npm install -g pnpm@8.8.0
 
-RUN if [ -f pnpm-lock.yaml ]; then \
-      pnpm install --frozen-lockfile; \
-    else \
-      pnpm install --no-frozen-lockfile; \
-    fi
+RUN pnpm install
 
 COPY . .
 RUN if [ ! -f next.config.js ]; then echo "module.exports = {}" > next.config.js; fi

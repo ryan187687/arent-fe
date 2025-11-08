@@ -55,7 +55,10 @@ const DrawerMenu: React.FC = () => {
           <X size={28} />
         </button>
 
-        <nav className="mt-16 flex flex-col divide-y divide-gray-500">
+        <nav
+          className="mt-16 flex flex-col divide-y divide-gray-500"
+          onClick={() => toggleModal(EnumModal.NAVIGATION_MENU, false)}
+        >
           {MenuDrawer.map((item) => (
             <Link
               key={item.label}

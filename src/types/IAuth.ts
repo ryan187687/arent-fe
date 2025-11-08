@@ -6,3 +6,7 @@ export interface IAuthRequest {
 export interface IAuthResponse {
   token: string;
 }
+
+export interface IPageProps<T> {
+  searchParams: Promise<T>;
+}

@@ -1,7 +1,7 @@
 ## 📁 Project Structure
 
 ```plaintext
-lixil-kinken-frontend/
+arent-fe/
 ├── .husky/                  # Commit lint configuration
 ├── .vscode/                 # VSCode configuration
 ├── public/                  # Static assets (images, favicon, fonts, etc.)
@@ -15,17 +15,11 @@ lixil-kinken-frontend/
 │   │   ├── organisms/       # Group of molecules
 │   │   └── templates/       # Layout templates for specific screens
 │   ├── config/              # General configuration files
-│   ├── e2e/                 # End-to-end tests (e.g., with Playwright)
-│   │   ├── fixtures/
-│   │   └── tests/
 │   ├── features/            # Feature-based modules
 │   ├── hooks/               # Custom React hooks
-│   ├── lib/                 # Helper libraries and utilities
 │   ├── services/            # API and external service integrations
 │   ├── store/               # State management (e.g., Jotai)
 │   ├── styles/              # Global styles and CSS variables
-│   ├── tests/               # Unit tests
-│   ├── theme/               # Theme files (colors, fonts, etc.)
 │   └── types/               # Global TypeScript type definitions
 ├── .dockerignore
 ├── Dockerfile              # Docker image build configuration
@@ -42,28 +36,18 @@ lixil-kinken-frontend/
 ## 🛠️ Technologies & Tools Used
 
 - **Next.js 15** (App Router)
-- **React 19**
+- **React 18**
 - **TypeScript 5**
-- **MUI 7** – UI/UX library
-- **Jotai** – Simple state management
+- **Tailwind CSS** – UI/UX library
 - **Lucide** – Icons library
 - **Atomic Design** – UI component architecture
 - **Docker & Docker Compose** – Application deployment
 - **ESLint + Prettier + Lint-Staged** – Code quality assurance
 - **Commitlint** – Commit convention validation
-- **Unittest & ComponentTest**
-- **End-to-End Testing** – e2e integration with Playwright
 
 ## 🚀 Installation
 
-### 1. Clone the repository with SSH
-
-```bash
-git clone git@github.com:GuildWorks/lixil-kinken-frontend.git
-cd lixil-kinken-frontend
-```
-
-### 2. Install dependencies
+### 1. Install dependencies
 
 Using [pnpm](https://pnpm.io/):
 
@@ -71,9 +55,15 @@ Using [pnpm](https://pnpm.io/):
 pnpm install
 ```
 
-### 3. Setup
+### 2A. Setup Local
 
-#### 3.1 Environment
+```bash
+pnpm dev
+```
+
+### 2B. Or Setup Docker
+
+#### 2.1 Environment
 
 Create file `.env.local` from `.env.example`
 
@@ -81,7 +71,7 @@ Create file `.env.local` from `.env.example`
 cp .env.example .env.local
 ```
 
-#### 3.2 Run with Docker
+#### 2.2 Run with Docker
 
 ```bash
 docker-compose up --build
@@ -103,8 +93,3 @@ pnpm lint
 pnpm lint:fix
 pnpm format
 ```
-
-## 🧪 Testing
-
-- **Unit test**: `Updating...`
-- **E2E test**: `Updating...`

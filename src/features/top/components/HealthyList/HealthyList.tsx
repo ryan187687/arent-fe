@@ -1,14 +1,15 @@
 import type { HealthyDTO, HealthyEntity } from '@/models';
 import { getHealthyRequest } from '@/requests';
 import { requestServer } from '@/services/requestServer';
+import type { IHealthyRequest } from '@/types';
 import { isEmptyLodash } from '@/utils';
 import { mapHealthyDtoToEntity } from '@/utils/mapper';
 
 import HealthyItem from './HealthyItem';
 
-const HealthyList: React.FC = async () => {
+const HealthyList: React.FC<IHealthyRequest> = async (props) => {
   const healthy = await requestServer({
-    apiRequest: getHealthyRequest(),
+    apiRequest: getHealthyRequest(props),
   });
 
   const healthyData: HealthyDTO[] = healthy?.data || [];

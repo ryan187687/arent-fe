@@ -3,14 +3,15 @@ import type { DiaryDTO } from '@/models/dto';
 import type { DiaryEntity } from '@/models/entities';
 import { getDiaryRequest } from '@/requests';
 import { requestServer } from '@/services/requestServer';
+import type { IRequest } from '@/types';
 import { isEmptyLodash } from '@/utils';
 import { mapDiaryDtoToEntity } from '@/utils/mapper';
 
 import DiaryItem from './DiaryItem';
 
-const DiaryList: React.FC = async () => {
+const DiaryList: React.FC<IRequest> = async (props) => {
   const diary = await requestServer({
-    apiRequest: getDiaryRequest(),
+    apiRequest: getDiaryRequest(props),
   });
 
   const diaryData: DiaryDTO[] = diary?.data || [];

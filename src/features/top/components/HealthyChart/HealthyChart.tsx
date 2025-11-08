@@ -5,7 +5,7 @@ import { CircularProgress } from '../CircularProgress';
 
 const HealthyChart: React.FC = () => {
   return (
-    <div className="lg:flex">
+    <div className="lg:flex bg-[#2E2E2E]">
       <div className="lg:w-[40%] h-[316px] hidden lg:block relative">
         <Image
           src="/assets/images/top/main_photo.jpg"

@@ -18,7 +18,7 @@ export const APP_API_URL = {
   EXERCISE: '/exercise',
   COLUMN: '/column',
   DIARY: '/diary',
-  LOGIN: '/login',
+  LOGIN: '/auth/login',
 };
 
 export const APP_RECOMMENDED_TYPE = {
@@ -64,6 +64,7 @@ export const APP_CONSTANTS = {
     POSITION_Y_OFFSET: 100,
     THROTTLE_DELAY: 100,
   },
+  LIMIT_PER_PAGE: 8,
   PERIOD_TYPE: {
     DAY: '日',
     WEEK: '週',

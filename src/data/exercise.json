@@ -1,11 +1,4 @@
 {
-  "status": "success",
-  "message": "Exercise data fetched successfully",
-  "meta": {
-    "total_pages": 1,
-    "total_items": 16,
-    "page": 1
-  },
   "data": [
     {
       "id": 1,
